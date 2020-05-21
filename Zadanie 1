@@ -1,8 +1,8 @@
-A = [1/x for x in range(1, 10)]
-print(A)
+print("Zapisywanie do pliku")
 
-B = [1**x for x in range(1, 10)]
-print(B)
+file = open("dane.txt", "w")
+for i in range(1, 20 + 1):
+    if i%4 == 0:
+        file.write(str(i) + " ")
 
-C = [x for x in A if x % 4 == 0]
-print(C)
+file.close()
